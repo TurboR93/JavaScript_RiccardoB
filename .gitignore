@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+._*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Log e file temporanei
+*.log
+__probe.html
+__shot.html

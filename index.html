@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Counter: una web app in JavaScript puro per incrementare e decrementare un contatore. Interfaccia generata dinamicamente via DOM.">
+  <meta name="author" content="Riccardo Brunello">
+  <meta name="theme-color" content="#0f1220">
+
+  <title>Counter · JavaScript puro</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔢</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!--
+    Nota: questo file è volutamente quasi vuoto.
+    Tutta l'interfaccia (titolo, display, pulsanti + / −, controlli e storico)
+    viene creata dinamicamente da JavaScript tramite manipolazione del DOM,
+    come richiesto dalle specifiche del progetto.
+  -->
+  <div id="app" class="app"></div>
+
+  <noscript>
+    <p class="noscript">
+      Questa applicazione richiede JavaScript attivo per funzionare:
+      l'intera interfaccia viene generata dinamicamente via DOM.
+    </p>
+  </noscript>
+
+  <!-- I file sono caricati in ordine di dipendenza, con defer -->
+  <script src="js/storage.js" defer></script>
+  <script src="js/counter.js" defer></script>
+  <script src="js/ui.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
