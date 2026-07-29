@@ -140,6 +140,10 @@
 
     els.stepInput.addEventListener('change', function () {
       counter.setStep(els.stepInput.value);
+
+      // Se l'utente ha svuotato il campo o scritto un valore non valido, il
+      // counter mantiene il passo precedente: riallineiamo il campo a schermo.
+      ui.render(counter.getState());
     });
 
     els.themeButton.addEventListener('click', function () {
